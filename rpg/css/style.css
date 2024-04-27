@@ -17,6 +17,10 @@ body {
     background-size: cover;
 }
 
+#tituloJogo {
+    color: #8B4513; /* Cor marrom */
+}
+
 #game {
     display: flex;
     flex-direction: column;
@@ -86,6 +90,10 @@ body {
     /* restante do código CSS do botão */
 }
 
+#imagemJogador{
+    width: 24%;
+}
+
 
 #imagemPersonagem {
     position: absolute;
@@ -122,4 +130,10 @@ input {
     border-radius: 12px; /* Borda arredondada */
     font-family: 'Cinzel', serif; /* Fonte com temática medieval */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Sombra para dar profundidade */
+}
+
+.input-imagem {
+    width: 13%; /* Ajuste para o tamanho desejado */
+    background-color: #8B4513; /* Cor de fundo marrom */
+    /* restante do código CSS do botão */
 }
