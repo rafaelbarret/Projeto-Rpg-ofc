@@ -32,6 +32,7 @@ class Personagem {
 
     usarItem(item) {
         this.vida += item.cura;
+        document.getElementById('somPocao').play(); // Adicionado aqui
     }
 }
 
@@ -93,8 +94,9 @@ document.getElementById('atacar').addEventListener('click', function() {
     }
 });
 
-document.getElementById('usarItem').addEventListener('click', function() {
+document.getElementById('tomarPocao').addEventListener('click', function() { // Mudado aqui
     jogador.usarItem(poção);
     adicionarAoLog('Jogador usa Poção de Cura. Vida do Jogador: ' + jogador.vida);
 });
+
 

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -6,8 +9,83 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: 'Cinzel', serif;
+    background: url('/rpg/images/pixel-art-12128.gif') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 80vw;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game-top {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#game-bottom {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#log {
+    height: 200px;
+    width: 100%;
+    max-width: 600px;
+    overflow: auto;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #3e2723;
+    background-color: #f5deb3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #3e2723;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 15px; /* Adicionado aqui */
+    border: 2px solid #8B4513; /* Adicionado aqui */
+    box-shadow: 0 0 10px rgba(0,0,0,0.53); /* Adicionado aqui */
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+#comecarJogo {
+    background-color: #006400; /* Cor de fundo verde escuro */
+    color: #F5DEB3; /* Cor do texto bege */
+    /* restante do código CSS do botão */
+}
+
+#atacar {
+    background-color: #8B0000; /* Cor de fundo vermelho escuro */
+    color: #F5DEB3; /* Cor do texto bege */
+    /* restante do código CSS do botão */
+}
+
+#tomarPocao {
+    background-color: #8B4513; /* Cor de fundo marrom */
+    color: #F5DEB3; /* Cor do texto bege */
+    /* restante do código CSS do botão */
+}
+
 
 #imagemPersonagem {
     position: absolute;
@@ -25,30 +103,23 @@ body {
     height: 100px;
 }
 
-#log {
-    height: 200px;
-    width: 100%;
-    max-width: 600px;
-    overflow: auto;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-}
-
-#buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 button {
     padding: 10px 20px;
     font-size: 16px;
 }
 
 input {
-    margin: 10px;
-    padding: 10px;
+    background-color: #8B4513; /* Cor de fundo marrom */
+    color: #F5DEB3; /* Cor do texto bege */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; /* Borda arredondada */
+    font-family: 'Cinzel', serif; /* Fonte com temática medieval */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Sombra para dar profundidade */
 }

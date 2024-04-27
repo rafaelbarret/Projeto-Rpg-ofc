@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,24 @@
 <body>
     <input id="nomeJogador" type="text" placeholder="Digite o nome do seu personagem">
     <input id="imagemJogador" type="file" accept="image/*"> <!-- Input para o usuário fazer upload da imagem -->
-    <img id="imagemPersonagem" src=""> <!-- Imagem do personagem -->
-    <img id="imagemMonstro" src="images/png-transparent-pixel-art-monster-ooze-monster-pixel-art-game-leaf-grass-thumbnail.png">
-    <div id="log"></div> 
-    <div id="buttons">
-        <button id="comecarJogo">Começar Jogo</button>
-        <button id="atacar">Atacar</button>
-        <button id="usarItem">Usar Item</button>
+    <div id="game">
+        <div id="game-top">
+            <img id="imagemMonstro" src="images/png-transparent-pixel-art-monster-ooze-monster-pixel-art-game-leaf-grass-thumbnail.png">
+        </div>
+        <div id="log"></div> 
+        <div id="buttons">
+            <button id="comecarJogo">Começar Jogo</button>
+            <button id="atacar">Atacar</button>
+            <button id="tomarPocao">Tomar Poção</button>
+        </div>
+        <div id="game-bottom">
+            <img id="imagemPersonagem" src="">
+        </div>
     </div>
-    <audio id="musicaFundo" src="musicaFundo.mp3" loop></audio>
-    <audio id="somAtaque" src="somAtaque.mp3"></audio>
+    <audio id="musicaFundo" src="sounds/game-music-loop-1-143979.mp3" loop></audio>
+    <audio id="somAtaque" src="sounds/metal-blade-slice-76-200891.mp3"></audio>
+    <audio id="somPocao" src="sounds/water_drinkwav-14601.mp3"></audio>
     <script src="js/rpg2.js"></script>   
 </body>
 </html>
-
-
     
