@@ -8,25 +8,35 @@
 </head>
 <body>
     <input id="nomeJogador" type="text" placeholder="Digite o nome do seu personagem">
+
     <div id="game">
         <div id="game-top">
             <img id="imagemMonstro" src="images/png-transparent-pixel-art-monster-ooze-monster-pixel-art-game-leaf-grass-thumbnail.png">
         </div>
+
         <h1 id="tituloJogo">Meu Jogo RPG</h1>
+
         <div id="log"></div> 
+
+        <div id="statusPersonagem"></div>
+
         <div id="buttons">
             <button id="comecarJogo">Começar Jogo</button>
+            <button id="toggleStatus">Mostrar Status</button>
             <button id="atacar">Atacar</button>
             <button id="atacarEspecial">Ataque Especial</button>
             <button id="tomarPocao">Tomar Poção</button>
         </div>
+
         <div id="game-bottom">
             <img id="imagemPersonagem" src="images/png-clipart-superman-logo-pixel-art-batman-superman-heroes-text.png">
         </div>
     </div>
+
     <audio id="musicaFundo" src="sounds/game-music-loop-1-143979.mp3" loop></audio>
     <audio id="somAtaque" src="sounds/metal-blade-slice-76-200891.mp3"></audio>
     <audio id="somPocao" src="sounds/water_drinkwav-14601.mp3"></audio>
+
     <script src="js/rpg2.js"></script>   
 </body>
 </html>
